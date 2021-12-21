@@ -1,5 +1,5 @@
 var secret = 'kWd4eUWg-xyXvfD';
-var repository ='~/testrepo';
+var repository ='/PersonalWesite';
 var port = 8080;
 
 let http = require('http');
