@@ -1,0 +1,11 @@
+{
+  "name": "githubwatchdog",
+  "version": "1.0.0",
+  "description": "Node App to track and deploy changes to a repository",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Ryan Warner",
+  "license": "ISC"
+}
