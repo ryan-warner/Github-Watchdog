@@ -13,7 +13,11 @@ http.createServer(function (req, res) {
 
         if (req.headers['x-hub-signature'] == sig) {
             console.log('Updating Local Project...')
-            exec('cd ' + repository + ' && git pull');
+            exec('cd ' + repository)
+            exec('pm2 stop "sudo nom run prod')
+            //exec('systemctl stop')
+            exec('sudo git pull origin master');
+            exec('pm2 start all')
         }
     });
 
