@@ -14,7 +14,7 @@ http.createServer(function (req, res) {
         if (req.headers['x-hub-signature'] == sig) {
             console.log('Updating Local Project...')
             exec('cd ' + repository)
-            exec('pm2 stop "sudo nom run prod')
+            exec('pm2 stop "sudo npm run prod')
             //exec('systemctl stop')
             exec('sudo git pull origin');
             exec('pm2 start all')
