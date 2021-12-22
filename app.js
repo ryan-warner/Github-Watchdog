@@ -16,7 +16,7 @@ http.createServer(function (req, res) {
             exec('cd ' + repository)
             exec('pm2 stop "sudo nom run prod')
             //exec('systemctl stop')
-            exec('sudo git pull origin master');
+            exec('sudo git pull origin');
             exec('pm2 start all')
         }
     });
